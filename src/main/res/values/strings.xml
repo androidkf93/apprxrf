@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">木白餐饮</string>
+    <string name="site_navigation">网址导航</string>
+
+    <string name="bottom_one">待处理</string>
+    <string name="bottom_two">订单管理</string>
+    <string name="bottom_three">发布</string>
+    <string name="bottom_four">门店运营</string>
+    <string name="bottom_five">我的</string>
+    <string name="nw_error_10002">暂无数据</string>
+    <string name="nw_error_10004">无网络</string>
+    <string name="login">登录</string>
+
+
+    <string name="pending_payment">待付款(%1$s)</string>
+    <string name="paid">新订单(%1$s)</string>
+    <string name="completed">已完成(%1$s)</string>
+    <string name="apply_for_refunded">退款(%1$s)</string>
+    <string name="canceled">已退款(%1$s)</string>
+
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">扫描设备中...</string>
+    <string name="select_device">请选择要连接的设备</string>
+    <string name="none_paired">没有匹配的设备</string>
+    <string name="has_paired">已配对</string>
+    <string name="not_paired">未配对</string>
+    <string name="rePaire_connect">重新配对并连接</string>
+    <string name="unpair">取消配对</string>
+    <string name="paire_connect">配对并连接</string>
+    <string name="connect_paired">连接</string>
+    <string name="select_options">选择操作</string>
+    <string name="none_found">没有找到设备</string>
+    <string name="no_bounded_device">未找到名称以 %s 开头的设备</string>
+    <string name="title_paired_devices">已配对的设备</string>
+    <string name="title_other_devices">其它可用设备</string>
+    <string name="button_scan">扫描新设备</string>
+
+
+    <string name="new_versionCode_true">已是最新版本</string>
+
+    <string name="new_versionCode_no">您使用的版本已OUT,点击更新版本</string>
+
+    <string name="soft_update_title">更新新版本</string>
+
+    <string name="soft_update_info">正在更新新版本，请等待</string>
+
+    <string name="soft_update_updatebtn">更新</string>
+
+    <string name="soft_update_later">稍后更新</string>
+
+    <string name="soft_updating">正在下载</string>
+
+    <string name="soft_update_cancel">取消更新</string>
+    <string name="memo">温馨提示</string>
+    <string name="add_step">第一步：开启GPRS打印机后，打印机
+将自动打印出设备编号以及编号的条
+形码（如未打印，请关闭重启）\n
+第二步：通过扫描条形码，获取到设
+备编号，系统向GPRS打印机发送验证
+码，将GPRS打印机打印出的绑定验证
+码填写到绑定界面\n
+第三步：设置打印机的小票打印类型
+和数量
+</string>
+
+</resources>

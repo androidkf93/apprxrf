@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_horizontal_double_margin"
+    android:paddingBottom="@dimen/activity_horizontal_double_margin"
+    android:background="@color/app_title">
+
+    <LinearLayout
+        android:id="@+id/ll_order_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/line"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+           android:text="0单" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/activity_horizontal_half_margin"
+            android:text="今日有效订单"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/view_v_line"
+        android:layout_alignTop="@+id/ll_order_num"
+        android:layout_alignBottom="@+id/ll_order_num"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/ll_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/line"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="0.0元" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/activity_horizontal_half_margin"
+            android:text="今日订单收入"/>
+    </LinearLayout>
+</RelativeLayout>
+    <GridView
+        android:id="@+id/gd_operate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"></GridView>
+</LinearLayout>

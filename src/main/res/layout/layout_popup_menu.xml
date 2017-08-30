@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pop_memu_bg"
+                android:padding="20dp">
+    <ImageView
+        android:id="@+id/img_pop_memu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/success"/>
+    <TextView
+        android:layout_below="@+id/img_pop_memu"
+        android:id="@+id/tv_pop_memu"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="#4A4A4A"
+        android:textSize="18dp"/>
+</RelativeLayout>

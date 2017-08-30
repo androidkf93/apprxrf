@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f5"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_nearby_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_vertical_100"
+        android:textColor="@color/text_6"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="附近可连接设备"/>
+    <ListView
+        android:layout_below="@+id/tv_nearby_bluetooth"
+        android:layout_above="@+id/btn_scanning"
+        android:id="@+id/lv_bluetooth_nearby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <Button
+        android:id="@+id/btn_scanning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="重新扫描"/>
+</RelativeLayout>

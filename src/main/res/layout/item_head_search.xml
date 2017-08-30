@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/ll_search"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/biankuang_home_search_r5"
+    android:layout_marginTop="@dimen/activity_horizontal_half_margin"
+    android:layout_marginBottom="@dimen/activity_horizontal_half_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center"
+        android:src="@drawable/searchicon"
+        android:layout_width="15dp"
+        android:layout_height="15dp" />
+    <EditText
+        android:id="@+id/edt_search"
+        android:textSize="@dimen/text_size_22"
+        android:layout_marginLeft="@dimen/activity_horizontal_half_margin"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:background="@null"
+        android:textColorHint="#6d6c6b"
+        android:hint="请输入订单号"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

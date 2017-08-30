@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+    <ImageView
+        android:id="@+id/img_qr"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_below="@+id/img_qr"
+        android:layout_marginTop="@dimen/activity_horizontal_three_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="保存二维码"
+        android:background="@color/red"/>
+    <TextView
+        android:layout_below="@+id/btn_save"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="店铺名称二维码，印在传单上可以让顾客更快找到门店"
+        android:textColor="@color/text_6"/>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f5"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <ListView
+                android:id="@+id/lv_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/line"/>
+            <View
+                android:id="@+id/line"
+                android:layout_above="@+id/tv_category_manager"
+                style="@style/view_line"/>
+            <TextView
+                android:id="@+id/tv_category_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="管理分类"
+                android:textColor="@color/text_6"
+                android:paddingTop="@dimen/activity_horizontal_one_half_margin"
+                android:paddingBottom="@dimen/activity_horizontal_one_half_margin"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="77"
+            android:layout_marginLeft="@dimen/activity_horizontal_half_margin"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_right"
+                android:layout_width="match_parent"
+                android:divider="@null"
+                android:dividerHeight="@dimen/activity_horizontal_half_margin"
+                android:layout_alignParentTop="true"
+                android:layout_above="@+id/ll_product_bottom"
+                android:layout_marginBottom="@dimen/activity_horizontal_half_margin"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:id="@+id/ll_product_bottom"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_vertical_88">
+                <LinearLayout
+                    android:id="@+id/fl_sort"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/batch_sort"/>
+                    <TextView
+                        android:id="@+id/tv_sort"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text_6"
+                        android:text="排序&amp;批量操作"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_add_good"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:textColor="@color/red"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="@dimen/text_size_36"
+                    android:layout_marginLeft="@dimen/activity_horizontal_half_margin"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_add_good"
+                    android:layout_width="wrap_content"
+                    android:background="@color/white"
+                    android:textColor="@color/text_6"
+                    android:gravity="center"
+                    android:text="新建商品"
+                    android:layout_marginLeft="@dimen/activity_horizontal_half_margin"
+                    android:layout_height="match_parent" />
+               </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

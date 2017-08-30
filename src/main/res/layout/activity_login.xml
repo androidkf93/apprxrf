@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    tools:context="shop.fly.com.shop.ui.activity.LoginActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/img_ac_or_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_alignTop="@+id/edt_account"
+            android:layout_alignBottom="@+id/edt_account"
+            android:src="@drawable/account_user"
+            />
+
+        <EditText
+            android:lines="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_horizontal_one_half_margin"
+            android:paddingBottom="@dimen/activity_horizontal_one_half_margin"
+            android:maxLines="1"
+            android:hint="请输入账号"
+            android:textSize="@dimen/text_size_28"
+            android:id="@+id/edt_account"
+            android:layout_toRightOf="@+id/img_ac_or_phone"
+            android:layout_marginLeft="10dp"
+            android:background="@null"/>
+        <View
+            android:id="@+id/ac_line"
+            android:layout_below="@+id/edt_account"
+            style="@style/view_line"/>
+        <ImageView
+            android:id="@+id/img_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:layout_alignTop="@+id/edt_password"
+            android:layout_alignBottom="@+id/edt_password"
+            android:src="@drawable/password"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:paddingTop="@dimen/activity_horizontal_one_half_margin"
+            android:paddingBottom="@dimen/activity_horizontal_one_half_margin"
+            android:layout_alignParentRight="true"
+            android:hint="请输入密码"
+            android:layout_alignLeft="@+id/edt_account"
+            android:id="@+id/edt_password"
+            android:layout_below="@+id/ac_line"
+            android:textSize="@dimen/text_size_28"
+            android:background="@null"
+            android:inputType="textPassword"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_double_half_margin"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:background="@color/red"/>
+</LinearLayout>

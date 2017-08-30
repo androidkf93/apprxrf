@@ -1,0 +1,41 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="category_tab_text">15.0sp</dimen>
+
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="activity_horizontal_half_margin">5dp</dimen>
+    <dimen name="activity_horizontal_one_half_margin">15dp</dimen>
+    <dimen name="activity_horizontal_double_margin">20dp</dimen>
+    <dimen name="activity_horizontal_double_half_margin">25dp</dimen>
+    <dimen name="activity_horizontal_three_margin">30dp</dimen>
+
+    <dimen name="title_height">45dip</dimen>
+
+    <dimen name="item_vertical_66">33dp</dimen>
+    <dimen name="item_vertical_70">35dp</dimen>
+    <dimen name="item_vertical_80">40dp</dimen>
+    <dimen name="item_vertical_86">43dp</dimen>
+    <dimen name="item_vertical_88">44dp</dimen>
+    <dimen name="item_vertical_90">45dp</dimen>
+    <dimen name="item_vertical_100">50dp</dimen>
+    <dimen name="item_vertical_160">80dp</dimen>
+
+    <dimen name="text_size_36">18sp</dimen>
+    <dimen name="text_size_32">16sp</dimen>
+    <dimen name="text_size_30">15sp</dimen>
+    <dimen name="text_size_28">14sp</dimen>
+    <dimen name="text_size_26">13sp</dimen>
+    <dimen name="text_size_24">12sp</dimen>
+    <dimen name="text_size_22">11sp</dimen>
+    <dimen name="text_size_20">10sp</dimen>
+    <dimen name="text_size_18">9sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

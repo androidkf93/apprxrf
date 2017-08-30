@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_title</item>
+        <item name="colorPrimaryDark">@color/app_title</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ShareDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item><!-- 去掉头部 -->
+    </style>
+
+    <style name="tv_singleLine_center">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/main_bm_text_select</item>
+        <item name="android:textSize">@dimen/text_size_22</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="view_line">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+    <style name="view_v_line">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <style name="category_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_vertical_90</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="text_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_26</item>
+    </style>
+
+    <style name="category_item_text" parent="text_default">
+        <item name="android:textColor">@color/text_6</item>
+         </style>
+    <style name="category_item_edit" parent="text_default">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+    <style name="tv_bottom">
+        <item name="android:id">@id/tv_bottom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_vertical_88</item>
+        <item name="android:background">@drawable/biankuang_red_r10</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_one_half_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_one_half_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_half_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_horizontal_half_margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_28</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+</resources>

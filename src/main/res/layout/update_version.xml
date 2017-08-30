@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"  
+    android:orientation="vertical"  
+     android:id="@+id/mypop"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/addbiankuang_frame"
+  >  
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:id="@+id/icon"
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_below="@+id/icon"
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:gravity="center_horizontal"  
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="50dp"
+        android:text="提示"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textColor="@color/text_6"
+        />
+    <View
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tv_content"
+        android:layout_marginRight="15dp"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"
+        android:text="是否更新到最新版本？"
+        android:clickable="true"
+        android:textSize="12sp"
+        android:textColor="@color/text_6"
+         />
+         <View 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:background="@color/line"/>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/pop_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/btn_no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="取消"
+            android:clickable="true"
+            android:textColor="@color/text_blue"
+            />
+        <View
+            android:layout_width="1px"
+            android:layout_height="50dp"
+            android:background="@color/line"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="确定"
+            android:clickable="true"
+            android:textColor="@color/text_blue"
+            />
+    </LinearLayout>
+</RelativeLayout>  

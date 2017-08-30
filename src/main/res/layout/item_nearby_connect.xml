@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_horizontal_half_margin"
+    android:paddingBottom="@dimen/activity_horizontal_half_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_connect"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_bluetooth_name"
+
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textColor="@color/text_6"/>
+        <TextView
+            android:id="@+id/tv_bluetooth_address"
+            android:layout_below="@+id/tv_bluetooth_name"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="address"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_6"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/biankuang_white_red"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="链接"
+        android:textColor="@color/red"/>
+</RelativeLayout>

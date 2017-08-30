@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_vertical_80">
+        <TextView
+            android:id="@+id/tv_good_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_9"
+            android:drawableLeft="@drawable/dot_text9"
+            android:drawablePadding="@dimen/activity_horizontal_half_margin"
+            android:textSize="@dimen/text_size_26"
+            android:text="大米"/>
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_9"
+            android:text="x1"/>
+        <TextView
+            android:id="@+id/tv_good_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="￥25"/>
+    </RelativeLayout>
+</LinearLayout>
